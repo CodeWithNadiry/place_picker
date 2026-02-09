@@ -22,7 +22,7 @@ export async function fetchUserPlaces() {
 }
 
 export async function updateUserPlaces(places) {
-  const res = await request("http://localhost:1050/user-placess", {
+  const res = await request("http://localhost:1050/user-places", {
     method: "PUT",
     body: JSON.stringify({ places }), // shorthand { places } is fine
     headers: { "Content-Type": "application/json" },
