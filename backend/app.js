@@ -54,4 +54,4 @@ app.use((req, res, next) => {
   res.status(404).json({ message: '404 - Not Found' });
 });
 
-app.listen(3000, () => console.log('server running on port 3000'));
+app.listen(1050, () => console.log('server running on port 3000'));

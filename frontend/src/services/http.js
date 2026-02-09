@@ -12,17 +12,17 @@ async function request(url, options) {
   return res.json();
 }
 export async function fetchAvailablePlaces() {
-  const res = await request("http://localhost:3000/places");
+  const res = await request("http://localhost:1050/places");
   return res.places;
 }
 
 export async function fetchUserPlaces() {
-  const res = await request("http://localhost:3000/user-places");
+  const res = await request("http://localhost:1050/user-places");
   return res.places;
 }
 
 export async function updateUserPlaces(places) {
-  const res = await request("http://localhost:3000/user-placess", {
+  const res = await request("http://localhost:1050/user-placess", {
     method: "PUT",
     body: JSON.stringify({ places }), // shorthand { places } is fine
     headers: { "Content-Type": "application/json" },
